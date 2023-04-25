@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to right, #ffafbd, #ffc3a0);
+  color: #eee;
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+header h1 {
+  text-align: centers;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #b393d3;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #957dad,
+               1px 2px 0px #957dad,
+               1px 3px 0px #957dad,
+               /*1px 4px 0px #957dad,
+               1px 5px 0px #957dad,
+               1px 6px 0px #957dad,*/
+               1px 10px 5px rgba(255, 84, 84, 0.5),
+               1px 15px 10px rgba(255, 88, 88, 0.4),
+               1px 20px 30px rgba(255, 143, 143, 0.3),
+               1px 25px 50px rgba(255, 142, 142, 0.2);
+}
+
+.pw-container {
+  width: 400px;
+  background-image: linear-gradient(to right, #cc2b5e, #753a88);
+  box-shadow: 0 4px 10px rgba(o, 0, 0, 0.6);
+}
+
+.pw-header {
+  padding: 1rem;
+}
+
+.pw {
+  width: 100%;
+  height: 70px;
+  background-color: rebeccapurple;
+  display: flex;
+  align-items: center;
+  position:relative
+  font-size: 1.5rem;
+  padding: 1rem;
+  /* overflow: auto; */
+}
+
+.pw button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, 50%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+  background-color: rgb(35, 5, 66);
+  padding: 0.25rem 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.pw:hover button {
+  opacity: 1;
+  transform: translate(0, -80%);
+}
+
+.pw-body {
+  padding: 0 1rem 1rem;
+}
+
+.form-control {
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+}
+
+.generate {
+  display: block;
+  background-color: #ff5289;
+  color: rgb(255, 238, 238);
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  text-shadow: 1px 1px 4px #000000;
+}
